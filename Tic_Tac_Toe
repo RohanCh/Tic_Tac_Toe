@@ -151,7 +151,20 @@ bool check(char board[3][5])
       scoreo++;
       return true;
     }
-    ///////
+    ///////-
+    else if((board[0][2]=='X')&&(board[1][2]=='X')&&(board[2][2]=='X')) 
+    {
+      printf("'%c' Wins \n",board[2][i]);
+      scorex++;
+      return true;
+    }
+    else if((board[0][2]=='O')&&(board[1][2]=='O')&&(board[2][2]=='O'))
+    {
+      printf("'%c' Wins \n",board[2][i]);
+      scoreo++;
+      return true;
+    }
+    /////////-
     else if((board[0][4]=='X')&&(board[1][4]=='X')&&(board[2][4]=='X')) 
     {
       printf("'%c' Wins \n",board[2][i]);
